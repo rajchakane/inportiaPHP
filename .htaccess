@@ -1,0 +1,13 @@
+RewriteCond %{HTTP_HOST} ^phpcode\.inprtia\.in$
+RewriteCond %{REQUEST_URI} !^/phpcode/
+RewriteRule (.*) /phpcode/$1
+
+RewriteEngine On
+
+RewriteRule ^home?$ index.php
+
+RewriteRule ^register?$ register.php
+
+RewriteRule ^contact?$ contact.php
+
+RewriteRule ^seleniumCourse?$ selenium-pimple-saudagar-courses.php
