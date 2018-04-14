@@ -1,6 +1,24 @@
 
   function get_record(pid,fname,mname,lname,gender,birth_date,mobile,alt_mobile,email,course_name,street_name,area,city,state,pincode,qualification,passing_year,organasation_type,organisation,years_of_exp)
   {
+
+
+
+    var x = document.getElementById("followupData");
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("followupData").innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("GET", "../phpModel/selectFollowup.php?pid="+ pid , true);
+    xmlhttp.send();
+
+
+
+
+
+
     console.log(pid);
     document.getElementById("ufname").value=fname;
     document.getElementById("upid").value=pid;
@@ -26,7 +44,16 @@
     var x = document.getElementById("editrecord");
     if (x.style.display === "none") {
         x.style.display = "block";       
-    }   
+    }  
+
+
+    
+
+
+
+
+
+
   }
 
 

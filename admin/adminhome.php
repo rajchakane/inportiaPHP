@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-  include('conconfig.php');
-  include('session.php');
+  include('../phpModel/conconfig.php');
+  include('../phpModel/session.php');
 
 ?>
 <html lang="en">
@@ -23,17 +23,18 @@
   <body>
     <!-- Navigation -->
     <?php
-    include '../nastedpage/navigation.php';
+      include '../nastedpage/navigation.php';
     ?>
     
     <!-- Page Content -->
-    <div class="container">
+    <div class="container lparent">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="index.html">Admin Panel</a>
         </li>
         <li class="breadcrumb-item active"> Home</li>
-      </ol>
+      </ol>  
+       <div class="lchild"><a href="logout.php"  class="btn course_btn btn-block text-white">Logout</a> </div> 
     </div>
 
     <div  class="container">
@@ -58,6 +59,9 @@
             <li class="nav-item">
               <a class="nav-link" id="pills-enrollment-tab" data-toggle="pill" href="#pills-enrollment" role="tab" aria-controls="pills-enrollment" aria-selected="false">Enrollment</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-feedback-tab" data-toggle="pill" href="#pills-feedback" role="tab" aria-controls="pills-feedback" aria-selected="false">Feedback</a>
+            </li>
           </ul>
 
             
@@ -67,9 +71,8 @@
             <div class="tab-pane fade show active" id="pills-datasource" role="tabpanel" aria-labelledby="pills-datasource-tab">
                           
               <?php
-                include('enquiryTab.php');
-              
-                include('viewDatasource.php');
+                include('enquiryTab.php');              
+                include('../phpModel/viewDatasource.php');
               ?>               
             </div>
 
@@ -78,9 +81,7 @@
           <!-- Tab Followup  -->
             <div class="tab-pane fade" id="pills-calling" role="tabpanel" aria-labelledby="pills-calling-tab">
 
-              <?php
-                include('followupTab.php');
-              ?>
+              <?php include('/followupTab.php'); ?>
 
             </div>
           <!-- /Tab Followup  -->
@@ -91,6 +92,14 @@
             </div>
             <div class="tab-pane fade" id="pills-enrollment" role="tabpanel" aria-labelledby="pills-enrollment-tab">
             </div>
+
+
+          <!-- Feedback-->
+            <div class="tab-pane fade" id="pills-feedback" role="tabpanel" aria-labelledby="pills-feedback-tab">
+              <?php include('/feedbackTab.php'); ?>
+            </div>
+          <!-- /Feedback-->
+
           </div>        
         </div>
 
@@ -101,7 +110,7 @@
           <div class="card my-4">
             <h5 class="card-header">Other Courses</h5>
             <div class="card-body">
-              <button type="button" class="btn course_btn btn-block text-white" onclick="window.location.href = 'showFollowUp.php'" >SELENIUM</button>
+              <button type="button" class="btn course_btn btn-block text-white" >SELENIUM</button>
               <button type="button" class="btn course_btn btn-block text-white">REACT JS</button>
               <button type="button" class="btn course_btn btn-block text-white">ANGULAR JS</button>
               <button type="button" class="btn course_btn btn-block text-white">ANDROID</button>

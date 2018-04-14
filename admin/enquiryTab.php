@@ -1,4 +1,4 @@
-<form class="well form-horizontal" action="addsource.php" method="post" id="contact_form">
+<form class="well form-horizontal" action="../phpModel/addsource.php" method="post" id="contact_form">
                   <div class="row">
                     <div class="input-group input-group mb-3 col-sm-4">
                       <div class="input-group-prepend">
