@@ -34,7 +34,7 @@
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="selenium-pimple-saudagar-courses.php">Automation</a>
                 <a class="dropdown-item" href="ui-pimple-saudagar.html">UI Development</a>
-                <a class="dropdown-item" href="mobile-pimple-saudagar.html">Mobile Development</a>
+                <a class="dropdown-item" href="android.php">Mobile Development</a>
                 <a class="dropdown-item" href="languages.html">Languages</a>
                 <a class="dropdown-item" href="bigdata.html">Big Data</a>
               </div>

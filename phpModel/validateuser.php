@@ -25,7 +25,7 @@
           $_SESSION['login_user'] = $myusername;
           header("location: admin/adminhome.php");
         } else {
-          header("location: admin/register.php");
+          //header("location: admin/register.php");
          } 
 
   $link->close();
