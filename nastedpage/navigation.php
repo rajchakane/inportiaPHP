@@ -1,4 +1,4 @@
- <nav class="navbar navbar-expand-lg navbar-light bg-ligth  fixed-top2">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top2">
       <div class="container">
         <a class=""><i class="fas fa-mobile-alt"></i> +91 9130490498</a>        
         <a href="mailto:contact@inportia.com"><i class="far fa-envelope"></i> contact@inportia.com</a>            
@@ -7,7 +7,7 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-ligth fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="http://inportia.com">INPORTIA</a>        
              
@@ -35,8 +35,17 @@
                 <a class="dropdown-item" href="selenium-pimple-saudagar-courses.php">Automation</a>
                 <a class="dropdown-item" href="ui-pimple-saudagar.html">UI Development</a>
                 <a class="dropdown-item" href="android.php">Mobile Development</a>
-                <a class="dropdown-item" href="languages.html">Languages</a>
-                <a class="dropdown-item" href="bigdata.html">Big Data</a>
+                
+                <div class="dropdown-submenu">
+                <a class="dropdown-toggle dropdown-item" data-toggle="dropdown-submenu" href="#" id="lang" aria-haspopup="true" aria-expanded="false">Languages<span class="caret"></span></a>
+                  <div class="dropdown-submenu" aria-labelledby="lang">
+                      <a class="dropdown-item" href="#">C/C++</a>
+                      <a class="dropdown-item" href="python.php">Python</a>
+                      <a class="dropdown-item" href="java.php">Java</a>
+                </div>
+              </div>
+                     
+                
               </div>
             </li>
             <li class="nav-item">
@@ -49,3 +58,7 @@
         </div>
       </div>
     </nav>
+
+
+
+    
